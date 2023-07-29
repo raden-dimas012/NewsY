@@ -1,0 +1,31 @@
+name: AppNavigation
+# Xcode Configurations
+configs:
+  Debug: debug
+  Release: release
+  UAT: release
+# Configurations Files
+options:
+  groupSortPosition: top
+  deploymentTarget:
+      iOS: "13.0"
+      
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: "com.mandiri.dimas.appnavigation"
+
+targets:
+  AppNavigation:
+    type: framework
+    platform: iOS
+    sources:
+      - AppNavigation
+    dependencies:
+      - framework: '${BUILT_PRODUCTS_DIR}/Home.framework'
+        embed: false
+        codeSign: false
+      - framework: '${BUILT_PRODUCTS_DIR}/Search.framework'
+        embed: false
+        codeSign: false
+      - framework: '${BUILT_PRODUCTS_DIR}/Detail.framework'
+        embed: false
+        codeSign: false

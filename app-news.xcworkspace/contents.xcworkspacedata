@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "MainApp">
+      <FileRef
+         location = "group:MainApp/MainApp.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "AppNavigation">
+      <FileRef
+         location = "group:AppNavigation/AppNavigation.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Domains">
+      <FileRef
+         location = "group:Domains/Domains.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Worker">
+      <FileRef
+         location = "group:DetailWorker/DetailWorker.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SearchWorker/SearchWorker.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:HomeWorker/HomeWorker.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Features">
+      <FileRef
+         location = "group:Detail/Detail.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Search/Search.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Home/Home.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "DataService">
+      <FileRef
+         location = "group:DataService/DataService.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

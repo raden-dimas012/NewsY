@@ -1,0 +1,40 @@
+name: MainApp
+# Xcode Configurations
+configs:
+  Debug: debug
+  Release: release
+  UAT: release
+# Configurations Files
+options:
+  groupSortPosition: top
+  deploymentTarget:
+      iOS: "13.0"
+ 
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: "com.mandiri.dimas"
+ 
+targets:
+  MainApp:
+    type: application
+    platform: iOS
+    sources:
+      - MainApp
+    dependencies:
+      - framework: '${BUILT_PRODUCTS_DIR}/AppNavigation.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/Home.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/Search.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/Detail.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/HomeWorker.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/SearchWorker.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/DetailWorker.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/Domains.framework'
+        embed: true
+      - framework: '${BUILT_PRODUCTS_DIR}/DataService.framework'
+        embed: true

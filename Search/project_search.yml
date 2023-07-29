@@ -1,0 +1,29 @@
+name: Search
+# Xcode Configurations
+configs:
+  Debug: debug
+  Release: release
+  UAT: release
+
+# Configurations Files
+options:
+  groupSortPosition: top
+  deploymentTarget:
+      iOS: "13.0"
+      
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: "com.mandiri.dimas.search"
+
+targets:
+  Search:
+    type: framework
+    platform: iOS
+    sources:
+      - Search
+    dependencies:
+      - framework: '${BUILT_PRODUCTS_DIR}/SearchWorker.framework'
+        embed: false
+        codeSign: false
+      - framework: '${BUILT_PRODUCTS_DIR}/Domains.framework'
+        embed: false
+        codeSign: false

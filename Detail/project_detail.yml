@@ -1,0 +1,22 @@
+name: Detail
+# Xcode Configurations
+configs:
+  Debug: debug
+  Release: release
+  UAT: release
+
+# Configurations Files
+options:
+  groupSortPosition: top
+  deploymentTarget:
+      iOS: "13.0"
+      
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: "com.mandiri.dimas.detail"
+
+targets:
+  Detail:
+    type: framework
+    platform: iOS
+    sources:
+      - Detail
